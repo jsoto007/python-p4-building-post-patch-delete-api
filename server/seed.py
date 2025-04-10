@@ -7,6 +7,9 @@ from faker import Faker
 from app import app
 from models import db, Game, Review, User
 
+
+print("Seeding 🌱🌱🌱")
+
 genres = [
     "Platformer",
     "Shooter",
@@ -108,3 +111,5 @@ with app.app_context():
         reviews.remove(r)
 
     db.session.commit()
+
+print("Done seeding 🪴🪴🪴")
